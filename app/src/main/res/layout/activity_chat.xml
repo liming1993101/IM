@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@mipmap/appbar_bg"
+        >
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/chat_back"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:text="会话"
+            android:textSize="18sp" />
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/chat_name"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="way"
+            android:textSize="20.0sp" />
+        </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/chat_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_weight="8"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:scrollbars="none" />
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+        <EditText
+            android:id="@+id/chat_editmessage"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="8"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:background="@drawable/textview_bg"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/chat_send"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="发送"
+            android:background="@color/bg_address_bk"
+            android:textSize="20sp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/send_photo"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/info_news"/>
+            <ImageView
+                android:id="@+id/send_camera"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/info_news"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/info_news"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

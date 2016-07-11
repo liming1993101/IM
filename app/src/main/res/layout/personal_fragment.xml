@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@mipmap/appbar_bg"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="群聊"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/complete_single"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_marginRight="17dp"
+            android:textSize="17sp"
+            android:visibility="gone"
+            android:textColor="@color/blue1"
+            android:text="完成"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:background="@color/bg_address_bk"></LinearLayout>
+<LinearLayout
+    android:id="@+id/find_friends"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingLeft="15dp"
+    android:background="@drawable/textview_bg"
+    android:gravity="center_vertical">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/search"/>
+    <TextView
+        android:gravity="center"
+        android:text="查找好友"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="28sp"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:background="@color/bg_address_bk"></LinearLayout>
+</LinearLayout>
